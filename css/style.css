@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700&display=swap');
+
 /* CSS Reset and Variables */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --accent-color: #3b82f6;
+    --primary-color: #1f6feb; /* refined professional blue */
+    --secondary-color: #0f4bb6; /* deeper accent */
+    --accent-color: #ff6b6b; /* warm coral accent for highlights */
     --success-color: #059669;
     --warning-color: #d97706;
     
@@ -28,6 +30,7 @@
     
     --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-family-mono: 'JetBrains Mono', 'Monaco', 'Menlo', monospace;
+    --font-family-heading: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     
     --transition-fast: 0.15s ease;
     --transition-medium: 0.3s ease;
@@ -247,10 +250,12 @@ body {
 
 .stat-number {
     display: block;
-    font-size: 2rem;
+    font-family: var(--font-family-heading);
+    font-size: 2.6rem;
     font-weight: 700;
     color: var(--primary-color);
-    font-family: var(--font-family-mono);
+    line-height: 1;
+    letter-spacing: -0.02em;
 }
 
 .stat-label {
