@@ -258,6 +258,17 @@ body {
     letter-spacing: -0.02em;
 }
 
+.stat-number .stat-int {
+    display: inline-block;
+}
+
+.stat-number .stat-decimal {
+    display: inline-block;
+    font-size: 1.8rem; /* slightly smaller decimal for better visual balance */
+    vertical-align: baseline;
+    margin-left: 0.05rem;
+}
+
 .stat-label {
     font-size: 0.875rem;
     color: var(--text-secondary);
